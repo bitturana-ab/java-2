@@ -24,5 +24,11 @@ class casting {
         System.out.println(x >= y);
         System.out.println(x != y);
         System.out.println(x == y);
+
+        // type promotions in java
+        byte b1 = 20;
+        byte b2 = 30;
+        int i = b1 * b2;
+        System.out.println(i);
     }
 }
