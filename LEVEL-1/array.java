@@ -22,17 +22,18 @@ class array {
         // s3.rollno = 21;
         // s3.name = "sung";
         // s3.marks = 78;
-        //creating array of objects of class student
+        // creating array of objects of class student
         // Student st[] = new Student[4];
         // st[0] = s1; //inserting in array
         // st[1] = s2;
         // st[2] = s3;
         // //printing data through enhance for loop
         // for (Student stud : st) {
-        //     System.out.println("name:" + stud.name + " ; " + "roll:" + stud.rollno + " ; " + "marks:" + stud.marks);
+        // System.out.println("name:" + stud.name + " ; " + "roll:" + stud.rollno + " ;
+        // " + "marks:" + stud.marks);
         // }
 
-        // multi-dimensional or 2-d array 
+        // multi-dimensional or 2-d array
         System.out.println("Here are multi or 2 dimensional array's elements: ");
         int nums[][] = new int[3][4];
 
@@ -41,12 +42,12 @@ class array {
             for (int j = 0; j < 4; j++) {
                 nums[i][j] = (int) (Math.random() * 10);
             }
-        }       
+        }
         // for (int i = 0; i < 3; i++) {
-        //     for (int j = 0; j < 4; j++) {
-        //         System.err.print(nums[i][j] + " ");
-        //     }
-        //     System.out.println();
+        // for (int j = 0; j < 4; j++) {
+        // System.err.print(nums[i][j] + " ");
+        // }
+        // System.out.println();
         // }
         // //same thing for loop or enhance for loop
         for (int n[] : nums) {
@@ -55,23 +56,52 @@ class array {
             }
             System.out.println();
         }
-        // //jagged array
-        // int nums[][] = new int[3][];//jagged array
+        // jagged array means in rows we dont know how many cols will be there
+        // int nums[][] = new int[3][]; //jagged array
         // nums[0] = new int[3];
         // nums[1] = new int[4];
         // nums[2] = new int[2];
         // for (int i = 0; i < nums.length; i++) {
-        //     for (int j = 0; j < nums[i].length; j++) {
-        //         nums[i][j] = (int) (Math.random() * 10);
-        //     }
+        // for (int j = 0; j < nums[i].length; j++) {
+        // nums[i][j] = (int) (Math.random() * 10);
+        // }
         // }
         // for (int n[] : nums) {
-        //     for (int m : n) {
-        //         System.err.print(m + " ");
-        //     }
-        //     System.err.println();
+        // for (int m : n) {
+        // System.err.print(m + " ");
         // }
-        //example 1-d array
+        // System.err.println();
+        // }
+
+        // 3-d array
+        // System.out.println("here is 3-d array codes");
+        // int num3d[][][] = new int[2][3][4];
+        // for (int i = 0; i < 2; i++) {
+        // for (int j = 0; j < 3; j++) {
+        // for (int k = 0; k < 4; k++) {
+        // num3d[i][j][k] = (int) (Math.random() * 10);
+        // }
+        // }
+        // }
+        // // print elements of 3-d array
+        // // for (int n[][] : num3d) {
+        // // for (int m[] : n) {
+        // // for (int l : m) {
+        // // System.out.print(l + " ");
+        // // }
+        // // System.out.println();
+        // // }
+        // // }
+        // for (int i = 0; i < 2; i++) {
+        // for (int j = 0; j < 3; j++) {
+        // for (int k = 0; k < 4; k++) {
+        // System.out.print(num3d[i][j][k] + " ");
+        // }
+        // System.out.println();
+        // }
+        // }
+
+        // example 1-d array
         System.err.println("Here are 1-d array's elements: ");
         int nums1[] = new int[4];
         nums1[0] = 4;
