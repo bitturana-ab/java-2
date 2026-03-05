@@ -1,13 +1,14 @@
 ## Here you will find CORE JAVA CODES that are useful to learn or master java programming language.
 
 ```java
-1.Basic codes 
+1.Basic codes
 2.Methods(Functions)
 3.Classes and Objects
 4.Constructor
-5.Inheritance
-6.Polimorphism
-7.Interface etc...
+5.Encapsulation(hide data or private)
+6.Inheritance
+7.Polimorphism
+8.Interface etc...
 ```
 
 ##
