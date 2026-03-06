@@ -1,5 +1,5 @@
 
-final class A { //final ->stop inheritance or can't be extended
+final class A { // final -> stop inheritance or can't be extended
 
     public void show() {
         System.out.println("in A show");
@@ -26,5 +26,6 @@ class FinalKeyword {
         b.show();
         final int a = 2;
         // a=4; // can't change final value
+        System.out.println(a);
     }
 }
