@@ -18,7 +18,7 @@
     
     1. OOP (deep level)
 
-    2. Collections Framework
+    2. Collections Framework[ArrayList(list of objects),HashMap(key,value),HashSet(unquie),TreeSet(unqiue and sorted)]
 
     3. Generics
 
