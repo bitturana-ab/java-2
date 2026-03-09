@@ -1,3 +1,4 @@
+package List;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,7 +19,7 @@ class Student implements Comparable<Student> {
         return "Student [age:" + age + ",name:" + name + "]";
     }
 
-    //default comare logic
+    // default comare logic
     @Override
     public int compareTo(Student that) {
         if (this.age < that.age) {
@@ -39,18 +40,18 @@ class SortStudents {
         stud.add(new Student(50, "Bittu Vijay"));
         // System.out.println(stud);
         // for (Student s : stud) {
-        //     System.out.println(s);
+        // System.out.println(s);
         // }
         // Comparator<Student> com = new Comparator<Student>() {
-        //     public int compare(Student i, Student j) {
-        //         if (i.age > j.age) {
-        //             return 1;
-        //         } else {
-        //             return -1;
-        //         }
-        //     }
+        // public int compare(Student i, Student j) {
+        // if (i.age > j.age) {
+        // return 1;
+        // } else {
+        // return -1;
+        // }
+        // }
         // };
-        //or using lemba expression and ternary operator
+        // or using lemba expression and ternary operator
         Comparator<Student> com = (i, j) -> i.age > j.age ? 1 : -1;
 
         Collections.sort(stud, com);
@@ -59,7 +60,7 @@ class SortStudents {
         for (Student s : stud) {
             System.out.println(s);
         }
-        //or implements method use 
+        // or implements method use
         Collections.sort(stud);
 
         System.out.println("After sorting with age logic in implemenents comparable");

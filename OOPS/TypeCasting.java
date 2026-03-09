@@ -20,7 +20,7 @@ class TypeCasting {
         A obj = (A) new B();
         obj.show1();
 
-        B obj1 = (B) obj; //DownCasting
+        B obj1 = (B) obj; // DownCasting
         obj1.show2();
     }
 }
