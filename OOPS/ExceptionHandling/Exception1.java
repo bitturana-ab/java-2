@@ -1,18 +1,18 @@
-class ABException extends Exception{
+class ABException extends Exception {
 
     public ABException(String message) {
         super(message);
     }
-    
+
 }
+
 class Exception1 {
 
     public static void main(String arg[]) {
-        int i = 0;
         int j = 0;
         int num[] = new int[5];
         try {
-            j = 18 / 30;
+            j = 18 / 2;
             if (j == 0) {
                 throw new ABException("zero or negative num");
             }
@@ -20,18 +20,17 @@ class Exception1 {
             System.out.println(num[5]);
 
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Stay in your limit" + e);
+            System.out.println("Stay in your limit " + e.getMessage());
         } catch (ArithmeticException e) {
             j = 18;
             System.out.println(e.getMessage());
-        } 
-        catch (ABException e) {
+        } catch (ABException e) {
             System.out.println(e);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Something went wrong");
+        } finally {
+            System.out.println(j);
+            System.out.println("Bye");
         }
-        System.out.println(j);
-        System.out.println("Bye");
     }
 }
