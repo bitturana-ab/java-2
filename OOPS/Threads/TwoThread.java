@@ -6,8 +6,8 @@ class A extends Thread {
             System.out.print("Hi ");
             try {
                 Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
     }
@@ -18,11 +18,11 @@ class B extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
             System.out.print("AB ");
-        }
-        try {
-            Thread.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            try {
+                Thread.sleep(10);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
