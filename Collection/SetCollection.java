@@ -1,14 +1,16 @@
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
 class SetCollection {
 
     public static void main(String[] args) {
-        //for converting object to integer 
+        // for converting object to integer
+        // hashset contains only unique elements
         // Set<Integer> nums = new HashSet<Integer>();
 
-        //treeset gives sorted array
+        // treeset gives sorted array
         Set<Integer> nums = new TreeSet<Integer>();
 
         nums.add(13);
@@ -19,8 +21,8 @@ class SetCollection {
         nums.add(25);
         nums.add(13);
         System.out.println(nums);
-        for (int n : nums) {
-            System.out.println(n);
-        }
+        // for (int n : nums) {
+        // System.out.println(n);
+        // }
     }
 }
