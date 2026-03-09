@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class ArrayList1 {
-
+public class ArraylistCode {
     public static void main(String[] args) {
         // for converting object to integer type
         Collection<Integer> nums = new ArrayList<Integer>();
