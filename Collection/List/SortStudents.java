@@ -19,7 +19,7 @@ class Student implements Comparable<Student> {
         return "Student [age:" + age + ",name:" + name + "]";
     }
 
-    // default comare logic
+    // default compare logic
     @Override
     public int compareTo(Student that) {
         if (this.age < that.age) {
@@ -51,6 +51,7 @@ class SortStudents {
         // }
         // }
         // };
+
         // or using lemba expression and ternary operator
         Comparator<Student> com = (i, j) -> i.age > j.age ? 1 : -1;
 
